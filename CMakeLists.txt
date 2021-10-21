@@ -3,4 +3,9 @@ project(Scrabble)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Scrabble src/main.cpp)
+file(GLOB_RECURSE SCRABBLE_SRC
+        "src/*.hpp"
+        "src/*.cpp"
+        )
+
+add_executable(Scrabble ${SCRABBLE_SRC})
