@@ -1,7 +1,9 @@
 #include <iostream>
+#include "Scrabble/Board.hpp"
 
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
+    Scrabble::Board board;
+    std::wcout << board;
     return 0;
 }
