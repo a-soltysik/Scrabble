@@ -17,6 +17,7 @@ file(GLOB_RECURSE SCRABBLE_TEST_SRC
 add_executable(${TEST} ${SCRABBLE_TEST_SRC})
 target_link_libraries(${TEST} gtest gtest_main)
 target_include_directories(${TEST} PRIVATE ${TEST_DIR})
+target_compile_definitions(${TEST} PRIVATE TEST)
 
 enable_testing()
 add_test(${TEST} ${TEST})
